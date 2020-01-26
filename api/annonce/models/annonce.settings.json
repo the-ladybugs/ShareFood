@@ -1,0 +1,42 @@
+{
+  "connection": "default",
+  "collectionName": "annonces",
+  "info": {
+    "name": "Annonce"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Titre": {
+      "type": "string"
+    },
+    "categories": {
+      "via": "annonce",
+      "collection": "categorie"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Adresse": {
+      "type": "string"
+    },
+    "DateLimite": {
+      "type": "date"
+    },
+    "Photo": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "DatePickup": {
+      "type": "datetime"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

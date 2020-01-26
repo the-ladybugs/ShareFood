@@ -1,0 +1,22 @@
+{
+  "connection": "default",
+  "collectionName": "categories",
+  "info": {
+    "name": "Categorie"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Titre": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "annonce": {
+      "model": "annonce",
+      "via": "categories"
+    }
+  }
+}
