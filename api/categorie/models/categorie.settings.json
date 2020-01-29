@@ -15,8 +15,8 @@
       "unique": true
     },
     "annonce": {
-      "model": "annonce",
-      "via": "categories"
+      "via": "categories",
+      "model": "annonce"
     }
   }
 }

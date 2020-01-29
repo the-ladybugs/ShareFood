@@ -13,8 +13,8 @@
       "type": "string"
     },
     "categories": {
-      "via": "annonce",
-      "collection": "categorie"
+      "collection": "categorie",
+      "via": "annonce"
     },
     "Description": {
       "type": "richtext"
@@ -37,6 +37,9 @@
     "user": {
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "Picture": {
+      "type": "string"
     }
   }
 }
