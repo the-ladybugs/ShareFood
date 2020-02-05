@@ -35,7 +35,8 @@
       "model": "user"
     },
     "Picture": {
-      "type": "string"
+      "type": "string",
+      "default": " "
     },
     "Categorie": {
       "type": "string"
@@ -45,11 +46,16 @@
       "default": "Disponible"
     },
     "Statut_Reservation": {
-      "type": "string"
+      "type": "string",
+      "default": "  "
     },
     "Reserving_User": {
       "type": "string",
       "default": "null"
+    },
+    "user_id": {
+      "type": "string",
+      "default": " "
     }
   }
 }
