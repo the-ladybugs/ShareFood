@@ -12,10 +12,6 @@
     "Titre": {
       "type": "string"
     },
-    "categories": {
-      "collection": "categorie",
-      "via": "annonce"
-    },
     "Description": {
       "type": "richtext"
     },
@@ -40,6 +36,20 @@
     },
     "Picture": {
       "type": "string"
+    },
+    "Categorie": {
+      "type": "string"
+    },
+    "Statut_Annonce": {
+      "type": "string",
+      "default": "Disponible"
+    },
+    "Statut_Reservation": {
+      "type": "string"
+    },
+    "Reserving_User": {
+      "type": "string",
+      "default": "null"
     }
   }
 }
